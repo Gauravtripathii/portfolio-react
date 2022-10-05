@@ -1,7 +1,4 @@
 .home {
-  position: absolute;
-  height: 90%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -18,22 +15,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--red);
+  color: var(--three);
   font-size: 66px;
 }
 
 .home > .intro > h1 > span {
-  border-bottom: 3px solid var(--red);
+  border-bottom: 3px solid var(--three);
 }
 
 .home > .intro > h3 {
-  color: var(--blue);
+  color: var(--two);
   font-size: 30px;
 }
 
 .home > .button {
-  color: var(--red);
-  border: 2px solid var(--red);
+  color: var(--three);
+  border: 2px solid var(--three);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
@@ -49,7 +46,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--red);
+  background-color: var(--three);
   height: 100%;
   width: 0;
   display: flex;
@@ -65,5 +62,5 @@
 }
 
 .home > .button:hover {
-  color: var(--white);
+  color: var(--four);
 }

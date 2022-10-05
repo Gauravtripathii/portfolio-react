@@ -1,26 +1,27 @@
 import "./component_style/header.css";
-import home from "../media/home.png";
+import homeBlue from "../media/home-blue.png";
+import homeWhite from "../media/home-white.png";
 import { NavLink } from "react-router-dom";
 
 import { motion } from "framer-motion";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <ul>
         <li>
           <NavLink to="/">
-            <motion.img whileHover={{width: "40px"}} src={home} alt="home-icon" />
+            <motion.img whileHover={{width: "40px"}} src={props.theme === "light" ? homeBlue : homeWhite} alt="home-icon" />
           </NavLink>
         </li>
         <motion.li whileHover={{fontSize: "35px"}}>
-          <NavLink to="/">About</NavLink>
+          <NavLink to="/about">About</NavLink>
         </motion.li>
         <motion.li whileHover={{fontSize: "35px"}}>
-          <NavLink to="/">Portfolio</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
         </motion.li>
         <motion.li whileHover={{fontSize: "35px"}}>
-          <NavLink to="/">Contact Me</NavLink>
+          <NavLink to="/connect">Connect</NavLink>
         </motion.li>
       </ul>
     </header>
