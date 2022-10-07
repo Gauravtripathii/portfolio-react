@@ -31,7 +31,10 @@
   font-weight: bold;
   border: 2px solid var(--three);
   cursor: pointer;
-} .about > .buttons > .btn-1 {border-right: none;}
+}
+.about > .buttons > .btn-1 {
+  border-right: none;
+}
 
 .about > .buttons > span::before {
   content: "";
@@ -67,4 +70,24 @@
 
 .about > .buttons > span:hover {
   color: var(--four);
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 1200px) {
+  .about {
+    bottom: 0;
+    padding: 20px;
+  }
+  .about > .card {
+    padding: 10px;
+    font-size: 20px;
+    border-width: 1px;
+  }
+  .about > .buttons > .btn-1,
+  .about > .buttons > .btn-2 {
+    border: 1px solid var(--three);
+    padding: 5px;
+    user-select: none;
+  }
 }
