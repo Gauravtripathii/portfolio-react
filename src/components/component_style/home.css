@@ -7,7 +7,6 @@
 
 .home > .intro {
   /* text-align: center; */
-
 }
 
 .home > .intro > h1 {
@@ -63,4 +62,24 @@
 
 .home > .button:hover {
   color: var(--four);
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 1200px) {
+  .home {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+  }
+  .home > .intro > h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .home > .intro > h1 > span {
+    border: none;
+  }
+  .home > .intro > h3 {
+    text-align: center;
+  }
 }
